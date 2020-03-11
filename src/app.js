@@ -5,6 +5,8 @@ const geocode = require('./utils/geocode');
 const weather = require('./utils/weather');
 
 const app = express();
+// Setting up server port for Heroku deployment
+const port = process.env.PORT | 8080;
 
 // Define paths for Express config
 const public_dirname = path.join(__dirname, '../public');
@@ -89,6 +91,6 @@ app.get('*', (req, res) => {
 
 // Route handlers - end
 
-app.listen(8080, () => {
-    console.log('Server listening on port 8080');
+app.listen(port, () => {
+    console.log('Server listening on port ' + port);
 });

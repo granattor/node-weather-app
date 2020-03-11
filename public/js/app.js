@@ -5,7 +5,7 @@ const locationInput = document.querySelector('input');
 const forecast = document.querySelector('#forecast');
 const error = document.querySelector('#error');
 
-const weatherURL = 'http://localhost:8080/weather?location=';
+const weatherURL = '/weather?location=';
 
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault();

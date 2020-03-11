@@ -4,7 +4,7 @@
   "description": "A web server using Node.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js"
   },
   "author": "gaurav-rana",
   "license": "ISC",
